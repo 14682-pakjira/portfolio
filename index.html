@@ -1,11 +1,401 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>welcome to mywebsite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | หน้าหลัก</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#6dd5fa,#4ecdc4,#2ebf91);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+    color:white;
+    min-height:100vh;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* Navbar */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:bold;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:yellow;
+
+}
+
+/* Hero */
+
+.hero{
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+height:80vh;
+text-align:center;
+padding:20px;
+
+}
+
+.hero img{
+
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid white;
+object-fit:cover;
+box-shadow:0 0 30px rgba(0,0,0,.3);
+
+}
+
+.hero h1{
+
+font-size:55px;
+margin-top:25px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+margin-top:10px;
+font-weight:400;
+
+}
+
+.hero p{
+
+width:70%;
+margin-top:20px;
+font-size:20px;
+line-height:35px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+margin-top:40px;
+
+}
+
+.btn a{
+
+display:inline-block;
+margin:10px;
+padding:15px 35px;
+background:white;
+color:#008080;
+text-decoration:none;
+border-radius:40px;
+font-size:18px;
+font-weight:bold;
+transition:.4s;
+
+}
+
+.btn a:hover{
+
+transform:translateY(-8px);
+background:#009688;
+color:white;
+
+}
+
+/* Card */
+
+.container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:50px;
+
+}
+
+.card{
+
+width:300px;
+padding:30px;
+border-radius:20px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+text-align:center;
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* Footer */
+
+footer{
+
+text-align:center;
+padding:30px;
+background:rgba(255,255,255,.1);
+
+}
+
+/* Bubble */
+
+.bubble{
+
+position:fixed;
+bottom:-100px;
+border-radius:50%;
+background:rgba(255,255,255,.3);
+animation:float linear infinite;
+z-index:-1;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) scale(1);
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1.5);
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+width:95%;
+
+}
+
+}
+
+</style>
+
 </head>
-<body bgcolor="#bfff00">
-<h1>หน้าหลัก</h1>
-<a href="personal.html">ประวัติส่วนตัว</a>
-<p>โรงเรียนพานทอง</p>
+<body>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="profile.html">ประวัติส่วนตัว</a></li>
+<li><a href="education.html">การศึกษา</a></li>
+<li><a href="portfolio.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="https://via.placeholder.com/220" alt="Profile">
+
+<h1>สวัสดีครับ</h1>
+
+<h2>ยินดีต้อนรับสู่เว็บไซต์ Portfolio</h2>
+
+<p>
+
+สวัสดีครับ ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+ประวัติการศึกษา ผลงาน และช่องทางการติดต่อ
+สำหรับใช้ประกอบการศึกษาต่อและแสดงผลงานของตนเอง
+
+</p>
+
+<div class="btn">
+
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="portfolio.html">ผลงาน</a>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<div class="card">
+
+<h3>👤 ประวัติส่วนตัว</h3>
+
+<p>
+
+แนะนำตัว ความสามารถ งานอดิเรก และข้อมูลส่วนตัว
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎓 ประวัติการศึกษา</h3>
+
+<p>
+
+ข้อมูลโรงเรียน ระดับชั้น และผลการเรียน
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 ผลงาน</h3>
+
+<p>
+
+โครงงาน การแข่งขัน และกิจกรรมที่เคยเข้าร่วม
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+Copyright © 2026 My Portfolio
+
+</footer>
+
+<script>
+
+function bubble(){
+
+const b=document.createElement("div");
+
+b.className="bubble";
+
+let size=Math.random()*60+20;
+
+b.style.width=size+"px";
+
+b.style.height=size+"px";
+
+b.style.left=Math.random()*100+"%";
+
+b.style.animationDuration=(Math.random()*8+6)+"s";
+
+document.body.appendChild(b);
+
+setTimeout(()=>{
+
+b.remove();
+
+},14000);
+
+}
+
+setInterval(bubble,500);
+
+</script>
+
 </body>
 </html>
