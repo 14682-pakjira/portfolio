@@ -1,17 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | ประวัติส่วนตัว</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#4A6CF7,#6C63FF,#7B68EE,#5DADE2);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+color:white;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* Navbar */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#AEEBFF;
+
+}
+
+/* Profile */
+
+.profile{
+
+display:flex;
+justify-content:center;
+align-items:center;
+padding:70px 20px;
+
+}
+
+.card{
+
+width:900px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+border-radius:30px;
+padding:45px;
+display:flex;
+gap:45px;
+box-shadow:0 0 35px rgba(255,255,255,.15);
+
+}
+
+.left{
+
+text-align:center;
+width:300px;
+
+}
+
+.left img{
+
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+box-shadow:0 0 30px #8ab4ff;
+
+}
+
+.left h2{
+
+margin-top:20px;
+font-size:32px;
+
+}
+
+.left h4{
+
+font-weight:400;
+margin-top:8px;
+color:#DCEEFF;
+
+}
+
+.right{
+
+flex:1;
+
+}
+
+.right h1{
+
+font-size:40px;
+margin-bottom:30px;
+border-bottom:2px solid rgba(255,255,255,.3);
+padding-bottom:15px;
+
+}
+
+.info{
+
+margin-bottom:18px;
+padding:18px;
+background:rgba(255,255,255,.08);
+border-radius:15px;
+transition:.3s;
+
+}
+
+.info:hover{
+
+transform:translateX(8px);
+background:rgba(255,255,255,.15);
+
+}
+
+.info strong{
+
+color:#AEEBFF;
+font-size:19px;
+
+}
+
+.info p{
+
+margin-top:8px;
+font-size:18px;
+line-height:30px;
+
+}
+
+footer{
+
+margin-top:50px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.08);
+
+}
+
+@media(max-width:900px){
+
+.card{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.left{
+
+width:100%;
+
+}
+
+.right{
+
+text-align:left;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-<h1>ประวัติส่วนตัว</h1>
-<img src="images/17408-0.jpg">  
-<p>
-  ชื่อ นางสาวภัคจิรา ศรีไชยบาล<br>
-  ชื่อเล่น ออม<br>
-  วันเกิด 24 กุมภาพันธ์ 2551<br>
-  งานอดิเรก อ่านหนังสือการ์ตูน/ดูหนัง/ฟังเพลง<br>
-</p>
-<p>โรงเรียนพานทอง</p>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="profile.html">ประวัติส่วนตัว</a></li>
+<li><a href="education.html">การศึกษา</a></li>
+<li><a href="portfolio.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="profile">
+
+<div class="card">
+
+<div class="left">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h2>ภัคจิรา ศรีไชยบาล</h2>
+
+<h4>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h4>
+
+</div>
+
+<div class="right">
+
+<h1>👩 ประวัติส่วนตัว</h1>
+
+<div class="info">
+<strong>ชื่อ - สกุล</strong>
+<p>นางสาวภัคจิรา ศรีไชยบาล</p>
+</div>
+
+<div class="info">
+<strong>ชื่อเล่น</strong>
+<p>ออม</p>
+</div>
+
+<div class="info">
+<strong>วันเดือนปีเกิด</strong>
+<p>24 กุมภาพันธ์ 2551</p>
+</div>
+
+<div class="info">
+<strong>งานอดิเรก</strong>
+<p>🎵 ฟังเพลง<br>
+📚 อ่านหนังสือการ์ตูน<br>
+🎬 ดูหนัง</p>
+</div>
+
+<div class="info">
+<strong>การศึกษา</strong>
+<p>ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 โรงเรียนพานทอง จังหวัดชลบุรี และศึกษาอยู่ที่โรงเรียนพานทองตั้งแต่ระดับชั้นมัธยมศึกษาปีที่ 1 จนถึงปัจจุบัน</p>
+</div>
+
+<div class="info">
+<strong>เป้าหมาย</strong>
+<p>มุ่งมั่นพัฒนาตนเองทั้งด้านการเรียน ความรับผิดชอบ และทักษะต่าง ๆ เพื่อศึกษาต่อในระดับมหาวิทยาลัย และนำความรู้ไปใช้ให้เกิดประโยชน์ในอนาคต</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Copyright © 2026 My Portfolio
+
+</footer>
+
 </body>
 </html>
