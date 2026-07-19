@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Portfolio | การศึกษา</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#4A6CF7,#6C63FF,#7B68EE,#5DADE2);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+color:white;
+min-height:100vh;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#AEEBFF;
+}
+
+/* Title */
+
+.title{
+text-align:center;
+margin-top:60px;
+}
+
+.title h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.title p{
+font-size:20px;
+color:#EAF6FF;
+}
+
+/* Timeline */
+
+.timeline{
+
+position:relative;
+max-width:900px;
+margin:60px auto;
+padding:20px 0;
+
+}
+
+.timeline::after{
+
+content:'';
+position:absolute;
+width:4px;
+background:white;
+top:0;
+bottom:0;
+left:50%;
+margin-left:-2px;
+
+}
+
+.box{
+
+position:relative;
+width:50%;
+padding:20px 40px;
+
+}
+
+.box::after{
+
+content:'';
+position:absolute;
+width:22px;
+height:22px;
+background:#ffffff;
+border:5px solid #7B68EE;
+border-radius:50%;
+top:35px;
+z-index:1;
+
+}
+
+.left{
+
+left:0;
+text-align:right;
+
+}
+
+.left::after{
+
+right:-15px;
+
+}
+
+.right{
+
+left:50%;
+
+}
+
+.right::after{
+
+left:-15px;
+
+}
+
+.content{
+
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.12);
+transition:.3s;
+
+}
+
+.content:hover{
+
+transform:scale(1.03);
+
+}
+
+.content h2{
+
+margin-bottom:15px;
+color:#AEEBFF;
+
+}
+
+.content p{
+
+line-height:30px;
+font-size:18px;
+
+}
+
+/* Footer */
+
+footer{
+
+text-align:center;
+padding:25px;
+background:rgba(255,255,255,.08);
+margin-top:50px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.timeline::after{
+
+left:20px;
+
+}
+
+.box{
+
+width:100%;
+padding-left:60px;
+padding-right:20px;
+text-align:left;
+
+}
+
+.left,.right{
+
+left:0;
+
+}
+
+.left::after,
+.right::after{
+
+left:8px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="profile.html">ประวัติส่วนตัว</a></li>
+<li><a href="education.html">การศึกษา</a></li>
+<li><a href="portfolio.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="title">
+
+<h1>🎓 ประวัติการศึกษา</h1>
+
+<p>เส้นทางการศึกษาและการเรียนรู้ของฉัน</p>
+
+</section>
+
+<section class="timeline">
+
+<div class="box left">
+
+<div class="content">
+
+<h2>🏫 ระดับประถมศึกษา</h2>
+
+<p>
+สำเร็จการศึกษาระดับชั้นประถมศึกษาจาก
+<b>โรงเรียนชุมชนวัดหนองตำลึง</b>
+ซึ่งเป็นช่วงเวลาที่ได้เรียนรู้พื้นฐานด้านวิชาการ
+และปลูกฝังคุณธรรม ความรับผิดชอบ
+รวมถึงการใช้ชีวิตร่วมกับผู้อื่น
+</p>
+
+</div>
+
+</div>
+
+<div class="box right">
+
+<div class="content">
+
+<h2>📘 ระดับมัธยมศึกษาตอนต้น</h2>
+
+<p>
+สำเร็จการศึกษาระดับชั้นมัธยมศึกษาตอนต้นจาก
+<b>โรงเรียนพานทอง</b>
+โดยได้พัฒนาทักษะด้านการเรียน
+การทำงานร่วมกับผู้อื่น และเข้าร่วมกิจกรรมต่าง ๆ
+ของโรงเรียนอย่างต่อเนื่อง
+</p>
+
+</div>
+
+</div>
+
+<div class="box left">
+
+<div class="content">
+
+<h2>🎓 ระดับมัธยมศึกษาตอนปลาย</h2>
+
+<p>
+ปัจจุบันกำลังศึกษาอยู่ในระดับชั้น
+<b>มัธยมศึกษาปีที่ 6</b>
+ณ <b>โรงเรียนพานทอง จังหวัดชลบุรี</b>
+มุ่งมั่นพัฒนาความรู้ ความสามารถ
+และเตรียมความพร้อมเพื่อศึกษาต่อในระดับมหาวิทยาลัย
+รวมถึงการพัฒนาทักษะด้านเทคโนโลยี
+การเขียนเว็บไซต์ และการเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Copyright © 2026 My Portfolio
+
+</footer>
+
+</body>
+</html>
