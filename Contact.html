@@ -1,1 +1,292 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Portfolio | ติดต่อ</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#4A6CF7,#6C63FF,#7B68EE,#5DADE2);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+color:white;
+min-height:100vh;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* Navbar */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#AEEBFF;
+
+}
+
+/* Contact */
+
+.contact{
+
+display:flex;
+justify-content:center;
+align-items:center;
+padding:70px 20px;
+
+}
+
+.card{
+
+width:850px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+border-radius:30px;
+padding:50px;
+box-shadow:0 0 35px rgba(255,255,255,.15);
+
+}
+
+.card h1{
+
+text-align:center;
+font-size:46px;
+margin-bottom:15px;
+
+}
+
+.card .intro{
+
+text-align:center;
+font-size:18px;
+line-height:30px;
+color:#EAF6FF;
+margin-bottom:40px;
+
+}
+
+.info{
+
+background:rgba(255,255,255,.08);
+padding:22px;
+border-radius:18px;
+margin-bottom:20px;
+transition:.3s;
+
+}
+
+.info:hover{
+
+transform:translateX(8px);
+background:rgba(255,255,255,.16);
+
+}
+
+.info h2{
+
+font-size:22px;
+margin-bottom:10px;
+color:#AEEBFF;
+
+}
+
+.info p{
+
+font-size:18px;
+line-height:30px;
+
+}
+
+footer{
+
+margin-top:50px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,.08);
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.card h1{
+
+font-size:36px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="personal.html">ประวัติส่วนตัว</a></li>
+<li><a href="Education.html">การศึกษา</a></li>
+<li><a href="Proud.html">ผลงาน</a></li>
+<li><a href="Contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="contact">
+
+<div class="card">
+
+<h1>📬 ติดต่อ</h1>
+
+<p class="intro">
+
+ขอขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ Portfolio ของฉัน
+หากต้องการติดต่อสอบถามหรือพูดคุยเพิ่มเติม
+สามารถติดต่อได้ตามข้อมูลด้านล่างนี้
+
+</p>
+
+<div class="info">
+
+<h2>📧 อีเมล</h2>
+
+<p>
+
+Pakjira3333@gmail.com
+
+</p>
+
+</div>
+
+<div class="info">
+
+<h2>📞 เบอร์โทรศัพท์</h2>
+
+<p>
+
+092-512-2910
+
+</p>
+
+</div>
+
+<div class="info">
+
+<h2>📍 ที่อยู่</h2>
+
+<p>
+
+อำเภอเมือง จังหวัดชลบุรี<br>
+รหัสไปรษณีย์ 20000
+
+</p>
+
+</div>
+
+<div class="info">
+
+<h2>💬 ข้อความ</h2>
+
+<p>
+
+ยินดีรับคำแนะนำ ข้อเสนอแนะ และโอกาสในการเรียนรู้ใหม่ ๆ
+ขอบคุณที่สละเวลาเข้ามาเยี่ยมชมเว็บไซต์ Portfolio ของฉัน
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Copyright © 2026 My Portfolio
+
+</footer>
+
+</body>
+</html>
