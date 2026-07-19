@@ -1,1 +1,449 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Portfolio | ผลงาน</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#4A6CF7,#6C63FF,#7B68EE,#5DADE2);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:25px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#AEEBFF;
+
+}
+
+.title{
+
+text-align:center;
+margin-top:60px;
+
+}
+
+.title h1{
+
+font-size:50px;
+
+}
+
+.title p{
+
+margin-top:15px;
+font-size:20px;
+color:#EAF6FF;
+
+}
+
+.container{
+
+width:90%;
+max-width:1100px;
+margin:60px auto;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(18px);
+padding:30px;
+border-radius:25px;
+margin-bottom:50px;
+box-shadow:0 0 20px rgba(255,255,255,.15);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+transition:.4s;
+
+}
+
+.card h2{
+
+color:#AEEBFF;
+margin-bottom:20px;
+
+}
+
+.certificate{
+
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
+
+}
+
+.activity{
+
+display:flex;
+gap:15px;
+margin-top:15px;
+flex-wrap:wrap;
+
+}
+
+.activity img{
+
+width:250px;
+border-radius:15px;
+
+}
+
+.text{
+
+font-size:18px;
+line-height:32px;
+
+}
+
+footer{
+
+text-align:center;
+padding:30px;
+background:rgba(255,255,255,.08);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">My Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="personal.html">ประวัติส่วนตัว</a></li>
+<li><a href="Education.html">การศึกษา</a></li>
+<li><a href="Proud.html">ผลงาน</a></li>
+<li><a href="Contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="title">
+
+<h1>🏆 ผลงานและเกียรติบัตร</h1>
+
+<p>
+
+รวบรวมผลงาน กิจกรรม และเกียรติบัตรที่ภาคภูมิใจ
+ตลอดระยะเวลาที่ศึกษา
+
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🌟 นักเรียนดาวจรัสแสง ระดับชั้นมัธยมศึกษาปีที่ 4</h2>
+
+<img src="images/star-m4.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับเกียรติบัตรนักเรียนดาวจรัสแสง
+จากผลการเรียนดีเด่น มีผลการเรียนเฉลี่ย
+3.87 ในระดับชั้นมัธยมศึกษาปีที่ 4
+ถือเป็นอีกหนึ่งความภาคภูมิใจที่เกิดจาก
+ความตั้งใจ ความรับผิดชอบ และความมุ่งมั่น
+ในการศึกษาอย่างต่อเนื่อง
+
+</p>
+
+</div>
+<div class="card">
+
+<h2>🌟 นักเรียนดาวจรัสแสง ระดับชั้นมัธยมศึกษาปีที่ 5</h2>
+
+<img src="images/star-m5.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับเกียรติบัตรนักเรียนดาวจรัสแสง
+จากผลการเรียนดีเด่น มีผลการเรียนเฉลี่ย
+3.87 ในระดับชั้นมัธยมศึกษาปีที่ 5
+สะท้อนถึงความมุ่งมั่น ความรับผิดชอบ
+และความตั้งใจในการพัฒนาตนเอง
+อย่างสม่ำเสมอตลอดปีการศึกษา
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📖 ค่ายภาษาอังกฤษและภาษาจีน</h2>
+
+<img src="images/camp.jpg" class="certificate">
+
+<p class="text">
+
+เข้าร่วมกิจกรรมค่ายภาษาอังกฤษและภาษาจีน
+เพื่อพัฒนาทักษะด้านภาษา การสื่อสาร
+การทำงานร่วมกับผู้อื่น
+รวมถึงการเรียนรู้ผ่านกิจกรรมที่ส่งเสริม
+การใช้ภาษาในสถานการณ์จริง
+
+</p>
+
+<div class="activity">
+
+<!-- ใส่รูปกิจกรรมได้ตรงนี้ -->
+
+<img src="images/activity1.jpg">
+
+<img src="images/activity2.jpg">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>✍️ การแข่งขันเขียนภาษาจีน</h2>
+
+<img src="images/chinese.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับเกียรติบัตรจากการเข้าร่วม
+การแข่งขันเขียนภาษาจีน
+ซึ่งช่วยพัฒนาทักษะด้านการเขียน
+ความละเอียดรอบคอบ และการใช้ภาษา
+พร้อมทั้งเพิ่มประสบการณ์ในการแข่งขัน
+
+</p>
+
+<div class="activity">
+
+<!-- ใส่รูปกิจกรรม -->
+
+<img src="images/chinese1.jpg">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎨 กิจกรรม DIY "คุณช้างสุขส้ม"</h2>
+
+<img src="images/diy.jpg" class="certificate">
+
+<p class="text">
+
+เข้าร่วมกิจกรรมสร้างสรรค์ผลงาน
+DIY "คุณช้างสุขส้ม"
+เพื่อส่งเสริมความคิดสร้างสรรค์
+การออกแบบ และการทำงานร่วมกับผู้อื่น
+ผ่านกิจกรรมเชิงปฏิบัติ
+
+</p>
+
+<div class="activity">
+
+<img src="images/diy1.jpg">
+
+<img src="images/diy2.jpg">
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>🌈 โครงการ "สีสวยเพื่อน้อง"</h2>
+
+<img src="images/color.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับเกียรติบัตรจากการเข้าร่วมโครงการ
+<strong>"สีสวยเพื่อน้อง"</strong>
+ซึ่งเป็นกิจกรรมจิตอาสาที่มุ่งพัฒนาสภาพแวดล้อม
+และสร้างบรรยากาศที่ดีให้กับโรงเรียน
+โดยได้ฝึกการทำงานเป็นทีม ความรับผิดชอบ
+และการเสียสละเพื่อส่วนรวม
+
+</p>
+
+<div class="activity">
+
+<!-- ใส่รูปกิจกรรม -->
+<img src="images/color1.jpg">
+<img src="images/color2.jpg">
+
+</div>
+
+</div>
+
+<div class="card" style="border:3px solid #8EC5FF;">
+
+<h2>⭐ ผลงานที่ภาคภูมิใจ : ฝึกสังเกตการสอน</h2>
+
+<img src="images/observe-certificate.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับเกียรติบัตรจากการเข้าร่วม
+<strong>โครงการฝึกประสบการณ์สังเกตการสอน</strong>
+ณ <strong>โรงเรียนบ้านเทิด</strong>
+
+กิจกรรมครั้งนี้ทำให้ได้เรียนรู้
+บรรยากาศการทำงานของคุณครู
+วิธีการจัดการเรียนการสอน
+การดูแลนักเรียน
+รวมถึงการเตรียมความพร้อม
+สำหรับการศึกษาต่อในสายครุศาสตร์และศึกษาศาสตร์
+
+นับเป็นประสบการณ์ที่มีคุณค่า
+และเป็นอีกหนึ่งแรงบันดาลใจ
+ในการก้าวสู่การเป็นครูในอนาคต
+
+</p>
+
+<div class="activity">
+
+<!-- รูปกิจกรรม -->
+
+<img src="images/observe1.jpg">
+
+<img src="images/observe2.jpg">
+
+<img src="images/observe3.jpg">
+
+</div>
+
+</div>
+
+<div class="card" style="border:4px solid gold;">
+
+<h2>🏆 ผลงานที่ภาคภูมิใจที่สุด</h2>
+
+<img src="images/book-certificate.jpg" class="certificate">
+
+<p class="text">
+
+ได้รับรางวัล <strong>เหรียญเงิน</strong>
+จากการแข่งขัน
+<strong>ศิลปหัตถกรรมนักเรียน</strong>
+
+ประเภท
+<strong>การจัดทำหนังสือเล่มเล็ก</strong>
+
+การแข่งขันครั้งนี้ช่วยพัฒนาทักษะ
+ด้านการวางแผน
+การออกแบบ
+ความคิดสร้างสรรค์
+การทำงานร่วมกับผู้อื่น
+และการแก้ไขปัญหาเฉพาะหน้า
+
+ผลงานชิ้นนี้ถือเป็นผลงานที่ภาคภูมิใจที่สุด
+เนื่องจากเกิดจากความตั้งใจ
+ความพยายาม
+และการฝึกฝนร่วมกับสมาชิกในทีม
+จนสามารถได้รับรางวัลระดับเหรียญเงิน
+ซึ่งเป็นประสบการณ์ที่มีคุณค่า
+และสร้างความภาคภูมิใจให้กับตนเองเป็นอย่างมาก
+
+</p>
+
+<div class="activity">
+
+<!-- รูปกิจกรรมการแข่งขัน -->
+
+<img src="images/book1.jpg">
+
+<img src="images/book2.jpg">
+
+<img src="images/book3.jpg">
+
+<img src="images/book4.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+Copyright © 2026 My Portfolio
+
+</footer>
+
+</body>
+
+</html>
